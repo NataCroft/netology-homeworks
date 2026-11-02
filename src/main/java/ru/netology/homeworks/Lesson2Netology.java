@@ -3,9 +3,21 @@ package ru.netology.homeworks;
 import java.util.Scanner;
 
 public class Lesson2Netology {
-    Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Введите цену товара (в руб.): ");
-    int price = scanner.nextInt();
-    int
+        System.out.println("Введите цену товара (в руб.): ");
+        int price = scanner.nextInt();
+        System.out.println("Введите вес товара (в кг.): ");
+        int weight = scanner.nextInt();
+        int customs = calculateCustoms(price,weight);
+        System.out.println("Размер пошлины (в руб.) составит: " + customs);
+
+        scanner.close();
+    }
+    public  static int calculateCustoms(int price, int weight){
+        int fromPrice  = price / 100;
+        int fromWeight = weight * 100;
+        return fromPrice + fromWeight;
+    }
 }
