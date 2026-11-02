@@ -1,4 +1,4 @@
-package ru.netology.lesson1;
+package ru.netology.homeworks;
 
 public class Lesson1Netology {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Lesson1Netology {
 
         //Task 2
         public static class Main {
-            public static void main(String[] args) {
+            public static void hw(String[] args) {
                 int income = 100000;
                 int spending = 45000;
 
